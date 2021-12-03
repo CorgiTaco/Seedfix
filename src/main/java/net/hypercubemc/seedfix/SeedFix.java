@@ -1,20 +1,15 @@
 package net.hypercubemc.seedfix;
 
-import net.fabricmc.api.ModInitializer;
-import net.fabricmc.loader.api.FabricLoader;
-import net.fabricmc.loader.api.ModContainer;
+import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class SeedFix implements ModInitializer {
+@Mod(SeedFix.MODID)
+public class SeedFix {
     public static final String MODID = "seedfix";
-    public static final Logger logger = LogManager.getLogger(MODID);
+    public static final Logger LOGGER = LogManager.getLogger(MODID);
 
-    @Override
-    public void onInitialize() {
-        ModContainer seedfix = FabricLoader.getInstance().getModContainer(MODID)
-                .orElseThrow(() -> new IllegalStateException("Couldn't find the mod container for seedfix"));
-        String version = seedfix.getMetadata().getVersion().getFriendlyString();
-        logger.info("Loaded seedfix v" + version + " by Justsnoopy30!");
+    public SeedFix() {
+        LOGGER.info("Loaded seedfix v1.0 by Justsnoopy30!");
     }
 }

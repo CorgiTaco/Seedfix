@@ -3,6 +3,7 @@
   "minVersion": "0.8",
   "package": "net.hypercubemc.seedfix.mixin",
   "compatibilityLevel": "JAVA_17",
+  "refmap": "seedfix.refmap.json",
   "mixins": [
     "NoiseBasedChunkGeneratorMixin",
     "TheEndBiomeSourceMixin",

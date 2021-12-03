@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[28,)"
+issueTrackerURL="https://github.com/CorgiTaco/Seedfix/issues"
+license="MIT"
+
+[[mods]] #mandatory
+modId="seedfix" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="Seed Fix" #mandatory
+authors="Justsnoopy30"
+credits="Corgi Taco - Forge Port"
+description='''
+Allows worldgen datapacks to use the world seed as they should be able to, instead of being required to hardcode a seed
+'''
+[[dependencies.seedfix]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36.0.6,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.seedfix]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18,)"
+    ordering="NONE"
+    side="BOTH"
